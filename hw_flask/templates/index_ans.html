@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Результат</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+</head>
+<body style="background-color:#D3FFFA">
+<!-- https://getbootstrap.com/docs/4.5/components/navbar/ -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #B5D9D4;">
+    <a class="navbar-brand" href="#">Панель навигации</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/qa">Анкета</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/stat">Статистика</a>
+            </li>
+        </div>
+    </div>
+</nav>
+
+<div style="margin: 50px 10%">
+    <div class="container mt-5">
+        <!-- Заголовок -->
+        <div class="row">
+            <div class="col">
+                <h3>Ваш результат: {{rez}}</h3>
+                <div class="container mt-5">
+                    <h4>
+                        1. Одни липы по-прежнему росли себе на славу и теперь окруже(1)ые распаха(2)ыми полями гласят
+                        нашему
+                        ветре(3)ому племени о "прежде почивших отцах и братиях". (И. Тургенев)
+                    </h4>
+                    <div class="container">Ваш ответ: <b>{{answers[2]}}</b></div>
+                    <div class="container">Правильный ответ: <b>12</b></div>
+                </div>
+                <div class="container mt-5">
+                    <h4>
+                        2. Венера была действительно посла(1)ица небес, предвестница прекрас(2)ой утре(3)ей зари.(К.
+                        Паустовский)
+                    </h4>
+                    <div class="container">Ваш ответ: <b>{{answers[3]}}</b></div>
+                    <div class="container">Правильный ответ: <b>13</b></div>
+                </div>
+                <div class="container mt-5">
+                    <h4>
+                        3. Сзади раздался заглуше(1)ый ружей(2)ый выстрел, потом гул пушечного выстрела понесся вдоль,
+                        разорва(3)ый и размета(4)ый ураганом. (В. Короленко)
+                    </h4>
+                    <div class="container">Ваш ответ: <b>{{answers[4]}}</b></div>
+                    <div class="container">Правильный ответ: <b>134</b></div>
+                </div>
+                <div class="container mt-5">
+                    <h4>
+                        4. Двери такой лавочки обыкнове(1)о бывают увеша(2)ы связками произведений, отпечата(3)ых
+                        лубками на больших листках. (Ф. Достоевский)
+                    </h4>
+                    <div class="container">Ваш ответ: <b>{{answers[5]}}</b></div>
+                    <div class="container">Правильный ответ: <b>13</b></div>
+                </div>
+                <div class="container mt-5">
+                    <h4>
+                        5. Он вошел в свою студию, уставле(1)ую всяким художестве(2)ым хламом, драпировкой, развеше(3)ой
+                        по стульям. (Н.Гоголь)
+                    </h4>
+                    <div class="container">Ваш ответ: <b>{{answers[6]}}</b></div>
+                    <div class="container">Правильный ответ: <b>123</b></div>
+                </div>
+                <div class="container mt-5">
+                    <h4>
+                        6. Простенки фойе в несколько рядов были увеша(1)ы портретами и увеличе(2)ыми фотографиями в
+                        золоче(3)ых овальных рамах. Из первой рамы на вас глядела писа(4)ая маслом женщина лет тридцати.
+                        (М. Булгаков)
+                    </h4>
+                    <div class="container">Ваш ответ: <b>{{answers[7]}}</b></div>
+                    <div class="container">Правильный ответ: <b>2</b></div>
+                </div>
+                <div class="container mt-5">
+                    <h4>
+                        7. Как тяжелый ропот самого творца, еще погруже(1)ого в довреме2)ый хаос, доходил глухой,
+                        мрачный и торжестве(3)ый, все до основания потрясающий гул грома. (И. Бунин)
+                    </h4>
+                    <div class="container">Ваш ответ: <b>{{answers[8]}}</b></div>
+                    <div class="container">Правильный ответ: <b>123</b></div>
+                </div>
+                <div class="container mt-5">
+                    <h4>
+                        8. Через моще(1)ую улочку - крошечный магазин. На полках из море(2)ого дуба стоят коробки и
+                        коробочки, жестя(3)ые и лакирова(4)ые, китайские и цейлонские,фарфоровые чайницы и алые фунтики
+                        рождестве(5)ского чая, перевяза(6)ые ленточками. (И. Поволоцкая)
+                    </h4>
+                    <div class="container">Ваш ответ: <b>{{answers[9]}}</b></div>
+                    <div class="container">Правильный ответ: <b>46</b></div>
+                </div>
+                <div class="container mt-5">
+                    <h4>
+                        9. Горячие слезы Зиночки закапали на подбородок Александрова, и он с умиле(1)ым удивлением
+                        узнал, что слезы возлюбле(2)ой женщины имеют соле(3)ый вкус. (А. Куприн)
+                    </h4>
+                    <div class="container">Ваш ответ: <b>{{answers[10]}}</b></div>
+                    <div class="container">Правильный ответ: <b>12</b></div>
+                </div>
+                <div class="container mt-5">
+                    <h4>
+                        10. Рыбаки готовятся на белугу: чистят рыбачьи сапоги, подновляются непромокаемые краше(1)ые
+                        желтой масля(2)ой краской плащи и кожа(3)ые штаны. (А. Куприн)
+                    </h4>
+                    <div class="container">Ваш ответ: <b>{{answers[11]}}</b></div>
+                    <div class="container">Правильный ответ: <b>1</b></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
